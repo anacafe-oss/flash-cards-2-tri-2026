@@ -1,50 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css" />
-    <title>Conecta Aí</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O Enigma do Som | A História da Música</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="cabecalho">
-        <h1>Confere Aí</h1>
-        <nav>
-            <a href="#" class="cabecalho-link">Inicio</a>
-        </nav>
-    </header>
-    <main>
-        <h2>Descubra a verdade passando o mouse</h2>
-        <section>
-        <article class="cartao">
-            <div class="cartao-interno">
-                <div class="cartao-frente">
-                    <img src="https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/mm1012723121410486.jpg?w=1900&h=2849" alt="Pinguim" class="cartao-imagem">
-                    <p>Pinguins conseguem voar como pássaros!</p>
-                </div>
-                <div class="cartao-verso">
-                    <img src="https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/mm1012723121410486.jpg?w=1900&h=2849" alt="Pinguim"  class="cartao-imagem">
-                    <p>Pinguins não voam, mas são excelentes nadadores.</p>
-                </div>
-            </div>
-        </article>
-<article class="cartao">
-            <div class="cartao-interno">
-                <div class="cartao-frente">
-                    <img src="https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/mm1012723121410486.jpg?w=1900&h=2849" alt="Pinguim" class="cartao-imagem">
-                    <p>Pinguins conseguem voar como pássaros!</p>
-                </div>
-                <div class="cartao-verso">
-                    <img src="https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/mm1012723121410486.jpg?w=1900&h=2849" alt="Pinguim"  class="cartao-imagem">
-                    <p>Pinguins não voam, mas são excelentes nadadores.</p>
-                </div>
-            </div>
-        </article>
 
-        </section>
-    </main>
-    <footer>
-        <p>Projeto feito por Moni</p>
-    </footer>
+  <header>
+    <nav class="navbar">
+      <div class="logo">🎵 Echoes</div>
+      <ul class="nav-links">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#origem">Origem</a></li>
+        <li><a href="#generos">Gêneros</a></li>
+        <li><a href="#curiosidades">Curiosidades</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>A Evolução da Música</h1>
+      <p>Uma viagem no tempo através dos sons, instrumentos e artistas que moldaram a humanidade.</p>
+      <a href="#origem" class="btn">Explorar História</a>
+    </div>
+  </section>
+
+  <section id="origem" class="section">
+    <h2>A Origem & Evolução</h2>
+    <div class="content-box">
+      <p>A música nasceu com a própria humanidade. Antes mesmo de criar instrumentos, o ser humano pré-histórico já usava a voz, palmas e batidas no corpo para se comunicar e realizar rituais.</p>
+      <br>
+      <p>Com o tempo, surgiram os primeiros instrumentos de osso e madeira, evoluindo para as orquestras clássicas da Europa e culminando na revolução da música eletrônica e sintetizada dos dias de hoje.</p>
+    </div>
+  </section>
+
+  <section id="generos" class="section bg-alt">
+    <h2>Gêneros e Ícones</h2>
+    <div class="cards-container">
+      
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=500" alt="Música Clássica">
+        <div class="card-info">
+          <h3>Música Clássica</h3>
+          <p><strong>Artistas Marcantes:</strong> Beethoven, Mozart</p>
+          <p><strong>Instrumentos:</strong> Violino, Piano, Flauta</p>
+          <button class="card-btn" onclick="mostrarMusica('Sinfonia No. 5 - Beethoven')">Ouvir Destaque</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?w=500" alt="Rock N Roll">
+        <div class="card-info">
+          <h3>Rock 'n' Roll</h3>
+          <p><strong>Artistas Marcantes:</strong> Queen, Led Zeppelin</p>
+          <p><strong>Instrumentos:</strong> Guitarra Elétrica, Bateria</p>
+          <button class="card-btn" onclick="mostrarMusica('Bohemian Rhapsody - Queen')">Ouvir Destaque</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=500" alt="Pop Music">
+        <div class="card-info">
+          <h3>Pop</h3>
+          <p><strong>Artistas Marcantes:</strong> Michael Jackson, Madonna</p>
+          <p><strong>Instrumentos:</strong> Sintetizador, Voz, Baixo</p>
+          <button class="card-btn" onclick="mostrarMusica('Billie Jean - Michael Jackson')">Ouvir Destaque</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="curiosidades" class="section">
+    <h2>Curiosidades Interativas</h2>
+    <div class="interactive-box">
+      <p id="fact-display">Clique no botão abaixo para descobrir um fato curioso sobre a história da música!</p>
+      <button id="fact-btn" class="btn">Gerar Curiosidade 🎲</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Echoes Music Project - Desenvolvido para o GitHub Pages.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
+            

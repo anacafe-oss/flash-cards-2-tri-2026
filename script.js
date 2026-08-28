@@ -18,3 +18,12 @@ btnCuriosidade.addEventListener('click', () => {
     // Altera o texto na tela
     textoCuriosidade.textContent = `"${curiosidades[indiceAleatorio]}"`;
 });
+
+// Seleciona todos os cartões e adiciona o evento de clique
+const cartoes = document.querySelectorAll('.cartao');
+
+cartoes.forEach(cartao => {
+    cartao.addEventListener('click', () => {
+        cartao.classList.toggle('virado');
+    });
+});
